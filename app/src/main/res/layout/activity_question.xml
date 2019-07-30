@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:orientation="vertical"
+             android:layout_width="fill_parent"
+             android:layout_height="match_parent"
+             android:gravity="center_vertical" android:layout_marginTop="50dp">
+
+    <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="?android:attr/listDivider"
+        />
+    </TableRow>
+    <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+                android:text="TextView"
+                android:layout_width="410dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/question_textView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:gravity="center" android:textSize="18sp" android:paddingBottom="20dp"
+                android:paddingTop="20dp"/>
+    </TableRow>
+    <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="?android:attr/listDivider"
+        />
+    </TableRow>
+    <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_marginTop="20dp"/>
+    </TableRow>
+    <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/radioGroup"
+
+                android:gravity="center" android:background="@color/colorPrimary" android:paddingTop="20dp"
+                android:paddingBottom="20dp">
+            <RadioButton
+                    android:text="RadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/first_answer_radioButton"
+                    android:gravity="center_vertical" android:textSize="18sp"
+                    android:textColor="@color/windowBackground" android:paddingTop="5dp" android:paddingBottom="5dp"/>
+            <RadioButton
+                    android:text="RadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/second_answer_radioButton"
+                    android:textSize="18sp" android:textColor="@color/windowBackground" android:paddingBottom="5dp"
+                    android:paddingTop="5dp"/>
+            <RadioButton
+                    android:text="RadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/third_answer_radioButton"
+                    android:textSize="18sp" android:textColor="@color/windowBackground" android:paddingTop="5dp"
+                    android:paddingBottom="5dp"/>
+            <RadioButton
+                    android:text="RadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fourth_answer_radioButton" android:textSize="18sp"
+                    android:textColor="@color/windowBackground" android:paddingBottom="5dp" android:paddingTop="5dp"/>
+        </RadioGroup>
+    </TableRow>
+    <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_marginTop="120dp"/>
+    </TableRow>
+    <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <Button
+                android:text="Next"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/next_question_button"
+                android:onClick="next_question_button_click"
+                android:enabled="false"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:elevation="6dp"
+                android:stateListAnimator="@null"
+                android:translationZ="4dp"
+
+                android:theme="@style/AppTheme"
+                android:textColorLink="@color/colorAccent" android:background="@color/colorAccent"
+                android:textColor="@color/windowBackground"/>
+    </TableRow>
+</TableLayout>

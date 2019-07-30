@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+             android:layout_height="match_parent" android:layout_marginTop="130dp">
+
+    <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+                android:text="Your Score:"
+                android:layout_width="410dp"
+                android:layout_height="wrap_content" android:id="@+id/textView4"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1" android:gravity="center"
+                android:textColor="@color/windowBackground" android:paddingBottom="20dp" android:paddingTop="20dp"
+                android:background="@color/colorPrimaryDark"/>
+    </TableRow>
+    <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/total_score_textView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2" android:gravity="center"
+                android:layout_marginBottom="80dp" android:textColor="@color/windowBackground"
+                android:paddingBottom="20dp" android:background="@color/colorPrimaryDark"/>
+    </TableRow>
+    <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <Button
+                android:text="exit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/exit_button"
+                android:onClick="exit"
+                android:textColor="@color/windowBackground" android:background="@color/colorAccent"/>
+    </TableRow>
+</TableLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".MainActivity"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1.0"
+        android:layout_marginTop="120dp">
+
+
+    <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+                android:text="Welcome!"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:id="@+id/textView"
+                app:layout_constraintHorizontal_bias="0.482"
+                app:layout_constraintVertical_bias="0.106"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:textColor="@color/colorPrimaryDark"/>
+    </TableRow>
+    <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_marginTop="40dp"/>
+    </TableRow>
+    <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+                android:text="Enter your full name:"
+                android:id="@+id/textView2"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:layout_marginLeft="50dp" android:textColor="@color/colorPrimary"/>
+    </TableRow>
+    <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <EditText
+                android:inputType="textPersonName"
+                android:text="Name"
+                android:ems="10"
+                android:id="@+id/name_editText"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:layout_marginLeft="50dp" android:layout_marginRight="50dp"/>
+    </TableRow>
+    <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+                android:text="Group:"
+                android:id="@+id/textView3"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:layout_marginLeft="50dp" android:textColor="@color/colorPrimary"/>
+    </TableRow>
+    <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <EditText
+                android:inputType="textPersonName"
+                android:text="Group"
+                android:ems="10"
+                android:id="@+id/group_editText"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:layout_marginLeft="50dp" android:layout_marginRight="50dp"/>
+    </TableRow>
+    <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_marginTop="120dp"/>
+    </TableRow>
+    <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <Button
+                android:text="Start"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:id="@+id/button"
+                android:onClick="button_click"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                tools:theme="@style/AppTheme"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:elevation="6dp"
+                android:stateListAnimator="@null"
+                android:translationZ="4dp"
+        />
+    </TableRow>
+
+</TableLayout>
